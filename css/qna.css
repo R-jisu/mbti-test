@@ -34,6 +34,7 @@
 .answerList:hover, .answerList:focus {
     background-color: #FFD966;
     color: rgb(0,0,0);
+    box-shadow: 2px 3px 5px 0px;
     border: none;
     text-decoration: none;
 }

@@ -61,6 +61,11 @@ function setResult(){
     const imgDiv = document.querySelector("#resultImg");
     var imgURL = 'img/image-' + point + '.png';
 
+    resultImg.src = imgURL;
+    resultImg.alt = point;
+    resultImg.classList.add('img-fluid');
+    imgDiv.appendChild(resultImg);
+
     /////////////////////////////////////////////////////
     var resultVid = document.createElement('iframe');
     const VideoDiv = document.querySelector('#resultVideo');
@@ -75,11 +80,6 @@ function setResult(){
     VideoDiv.appendChild(resultVid);
     /////////////////////////////////////////////////////
 
-    resultImg.src = imgURL;
-    resultImg.alt = point;
-    resultImg.classList.add('img-fluid');
-    imgDiv.appendChild(resultImg);
-
     const resultDesc1 = document.querySelector('.resultDesc1');
     const resultDescTitle1 = document.querySelector('.resultDescTitle1');
     resultDescTitle1.innerHTML = infoList[point].descTitle1;
@@ -91,6 +91,7 @@ function setResult(){
     resultDesc2.innerHTML = infoList[point].desc2;
 
     const resultVideo = document.querySelector('.resultVideo');
+
 }
 
 function goResult(){
@@ -103,8 +104,8 @@ function goResult(){
         setTimeout(()=>{
             qna.style.display = "none";
             result.style.display = "block";
-        },200);
-    },200);
+        },300);
+    },300);
 
     setResult();
 }
@@ -133,7 +134,7 @@ function goNext(qIdx){
 function start(){
     main.style.WebkitAnimation = "fadeOut 1s"
     main.style.animation = "fadeOut 1s"
-
+    
     setTimeout(()=>{
         qna.style.WebkitAnimation = "fadeIn 1s"
         qna.style.animation = "fadeIn 1s"

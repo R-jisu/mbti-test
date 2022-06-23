@@ -19,7 +19,7 @@
   
 .resultDesc{
     font-size: 20px;
-    font-family: GmarketSansMedium;
+    font-family: GmarketSansLight;
   }
   
   
@@ -27,7 +27,7 @@
     margin-top: 10px;
     font-size: 2em; 
     border: none;
-    font-family: GmarketSansMedium;
+    font-family: GmarketSansLight;
   }
   .resultInro{
     font-size:1.5em;
@@ -35,7 +35,7 @@
   }
   .resultDescTitle1, .resultDescTitle2{
     font-size: 1.5em; 
-    font-family: GmarketSansMedium;
+    font-family: GmarketSansLight;
   }
   
   .resultDesc1, .resultDesc2{
@@ -43,7 +43,7 @@
     margin-bottom: 14px;
     font-size: 1em;
     color: #868686;
-    font-family: GmarketSansMedium;
+    font-family: GmarketSansLight;
   }
   
   .shareReusltBox{
@@ -51,6 +51,28 @@
   }
   .shareReuslt{
     font-size: 1.5em; 
-    font-family: GmarketSansMedium;
+    font-family: GmarketSansLight;
     color: #868686;
+  }
+
+  .Video{
+    margin-top: 20px;
+    margin-bottom: 14px;
+    color: black;
+    font-size: 1.5em;
+    font-family: GmarketSansLight;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+  }
+
+  .resultvideo{
+    position: relative;
+    height: 0px;
+    padding-bottom: 56.25%;
   }

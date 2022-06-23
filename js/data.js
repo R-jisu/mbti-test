@@ -188,3 +188,22 @@ const infoList = [
         desc2: "기획자는 사용자가 원하는 요구사항 및 사용자들의 성향등을 분석하며 예리한 시각으로  서비스 전체를 뛰어난 분석력으로 통괄합니다.",
     },
 ];
+
+const youtube = [
+    {
+        url: "https://www.youtube.com/embed/G7crMao49_I",
+        title: "백"
+    },
+    {
+        url: "https://www.youtube.com/embed/E9YDnkNHm4U",
+        title: "프론트"
+    },
+    {
+        url: "hhttps://www.youtube.com/embed/rYrp21elwAg",
+        title: "디자인"
+    },
+    {
+        url: "https://www.youtube.com/embed/cadWU25bIzw",
+        title: "기획"
+    },
+];

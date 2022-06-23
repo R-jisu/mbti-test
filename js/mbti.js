@@ -61,6 +61,20 @@ function setResult(){
     const imgDiv = document.querySelector("#resultImg");
     var imgURL = 'img/image-' + point + '.png';
 
+    /////////////////////////////////////////////////////
+    var resultVid = document.createElement('iframe');
+    const VideoDiv = document.querySelector('#resultVideo');
+    var videoURL = youtube[point].url;
+    var videotitle = youtube[point].title;
+
+    resultVid.src = videoURL;
+    resultVid.title = videotitle;
+
+    const recom_video = document.querySelector('.Video');
+    recom_video.innerHTML =  videotitle + " 추천 동영상";
+    VideoDiv.appendChild(resultVid);
+    /////////////////////////////////////////////////////
+
     resultImg.src = imgURL;
     resultImg.alt = point;
     resultImg.classList.add('img-fluid');
@@ -75,6 +89,8 @@ function setResult(){
     const resultDescTitle2 = document.querySelector('.resultDescTitle2');
     resultDescTitle2.innerHTML = infoList[point].descTitle2;
     resultDesc2.innerHTML = infoList[point].desc2;
+
+    const resultVideo = document.querySelector('.resultVideo');
 }
 
 function goResult(){

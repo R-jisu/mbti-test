@@ -192,11 +192,11 @@ const infoList = [
 const youtube = [
     {
         url: "https://www.youtube.com/embed/G7crMao49_I",
-        title: "백"
+        title: "백엔드"
     },
     {
         url: "https://www.youtube.com/embed/E9YDnkNHm4U",
-        title: "프론트"
+        title: "프론트엔드"
     },
     {
         url: "hhttps://www.youtube.com/embed/rYrp21elwAg",
